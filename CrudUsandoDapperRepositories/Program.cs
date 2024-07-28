@@ -14,7 +14,7 @@ namespace Aula2
             var connexao = new SqlConnection(CONEXAO_STRING);
             connexao.Open();
             CriarRole(connexao);
-            connexao.Open();
+            connexao.Close();
         }
 
         public static void ListarTodosUser(SqlConnection connection)
