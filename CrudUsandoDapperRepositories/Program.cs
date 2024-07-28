@@ -34,18 +34,5 @@ namespace Aula2
             foreach (var role in roles)
                 Console.WriteLine(role.Name);
         }
-
-        public static void CriarRole(SqlConnection connection)
-        {
-            var role = new Role()
-            {
-                Name = "Gta San Andreas",
-                Slug = "Jogo para PC e PS2"
-            };
-
-            connection.Insert<Role>(role);
-
-
-        }
     }
 }
